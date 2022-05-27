@@ -7,8 +7,16 @@ namespace cse210_03
     {
         static void Main(string[] args)
         {
-            Director director = new Director();
-            director.StartGame();
+            Console.WriteLine("\n");
+            Director Director = new Director();
+            Director.StartGame();
+
+            // Jumper Jumper = new Jumper();
+            // while (Jumper.WrongGuesses < 5)
+            // {
+            //     Jumper.DrawJumper(Jumper.WrongGuesses);
+            //     Jumper.WrongGuesses ++;
+            // }
         }
     }
 }

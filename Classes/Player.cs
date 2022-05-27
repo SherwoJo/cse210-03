@@ -9,7 +9,7 @@ namespace cse210_03.Classes
 
         public char MakeGuess()
         {
-            return '';
+            return 'a';
         }
     }
 }

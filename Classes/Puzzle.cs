@@ -11,6 +11,9 @@ namespace cse210_03.Classes
 
         public string GenerateWord()
         {
+            /*
+            This method selects a ramdom word from the list above and returns it.
+            */
             int index = rnd.Next(0, Words.Count);
             string word = Words[index];
 

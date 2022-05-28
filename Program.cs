@@ -17,7 +17,7 @@ namespace cse210_03
             // Jumper Jumper = new Jumper();
             // while (Jumper.WrongGuesses < 5)
             // {
-            //     Jumper.DrawJumper(Jumper.WrongGuesses);
+            //     Jumper.DrawJumper();
             //     Jumper.WrongGuesses ++;
             // }
 
@@ -25,12 +25,23 @@ namespace cse210_03
             Testing the Puzzle class
             */
             // Puzzle Puzzle = new Puzzle();
-            // int i = 0;
-            // while (i < 20)
+            // for (int i = 0; i < 20; i ++)
             // {
             //     string word = Puzzle.GenerateWord();
             //     Console.WriteLine(word);
-            //     i ++;
+            // }
+
+            /*
+            Testing the Player class.
+            */
+            // Player Player = new Player();
+            // for (int i = 0; i < 5; i ++)
+            // {
+            //     Player.MakeGuess();
+            // }
+            // foreach (char letter in Player.LettersGuessed)
+            // {
+            //     Console.WriteLine(letter);
             // }
         }
     }

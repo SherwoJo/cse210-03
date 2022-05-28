@@ -6,32 +6,36 @@ namespace cse210_03.Classes
     {
         public int WrongGuesses { get; set; } = 0;
 
-        public void DrawJumper(int wrongGuesses)
+        public void DrawJumper()
         {
+            /*
+            This method draws the Jumper character with his parachute
+            which shrinks as wrong guesses are made.
+            */
             // Draw the appropriate lines of the parachute depending on how many wrong guesses have occured.
-            if (wrongGuesses < 1)
+            if (WrongGuesses < 1)
             {
                 Console.WriteLine(" ___");
             }
-            if (wrongGuesses < 2)
+            if (WrongGuesses < 2)
             {
                 Console.WriteLine(@"/___\");
             }
-            if (wrongGuesses < 3)
+            if (WrongGuesses < 3)
             {
                 Console.WriteLine(@"\   /");
             }
-            if (wrongGuesses < 4)
+            if (WrongGuesses < 4)
             {
                 Console.WriteLine(@" \ /");
             }
 
             // Draw the Jumper's head as an 'O' or an 'X' depending on how many wrong guesses there are.
-            if (wrongGuesses < 4)
+            if (WrongGuesses < 4)
             {
                 Console.WriteLine("  O");
             }
-            if (wrongGuesses >= 4)
+            if (WrongGuesses >= 4)
             {
                 Console.WriteLine("  X");
             }

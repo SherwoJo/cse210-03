@@ -5,13 +5,16 @@ namespace cse210_03.Classes
 {
     public class Puzzle
     {
-        private List<string> Words { get; set; }
+        private List<string> Words { get; set; } = new List<string> {"cook", "snail", "pencil", "nose", "ladybug", "mailbox", "mountain", "paper", "orange", "boot", "fork", "lawyer", "balloon", "apples", "airport", "volleyball", "grape", "sheep", "crayon", "calendar"};
 
-        public string GenerateWord(List<string> list)
+        Random rnd = new Random();
+
+        public string GenerateWord()
         {
-            
-            
-            return "";
+            int index = rnd.Next(0, Words.Count);
+            string word = Words[index];
+
+            return word;
         }
     }
 }
